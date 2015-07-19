@@ -1,25 +1,53 @@
 <template name="homeIndex">
-  <div class="cover">
-    <div class="clearfix"></div>
-  </div>
-  <div class="container">
+<div class="row-fluid" id="bg" style="margin-top: 2em;">
+             <h1 style="padding-top: 20px;">Commission an artist to render your best friend</h1>
+</div>
+
+<div class="container" >
     <div class="row">
-      <div class="col-md-12">
-        <div class="jumbotron">
-          <h1>Welcome to Pet Portrait Club!</h1>
-          <p class="lead">
-            Woof.
-          </p>
+        <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 0px;">
+          <h2><strong>How it works</strong></h2>
         </div>
-      </div>
-      <hr/>
-    </div>
-  </div>
-  <div class="container marketing">
-    <div class="row">
-      {{#each featured}}
-      {{> productTile this}}
-      {{/each}}
-    </div>
-  </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <img  src="" style="height:80px;">
+            <h3>Find an artist whose style matches your own</h3>
+            <p>Browse through the artists of Pet Portrait Club who have been personally selected for their skill. Choose the artist whose work inspires you the most. Use the dropdown menus to find the size of the portrait that is right for you.</p>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <img  src="" style="height:80px;">
+            <h3>Upload your pet's picture and some notes</h3>
+            <p>During checkout you'll be asked to upload the picture(s) you want the artist to base the portrait on; also be sure to add some notes so that your portrait is as personalized as possible.</p>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <img  src="" style="height:80px;">
+            <h3>Find a good place on your wall!</h3>
+            <p>You'll receive a message from us, and the FedEx tracking number, once the portrait is on it's way. Be sure to prepare that perfect spot on your wall. Congratulations!</p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h2><strong>Artist Spotlight</strong></h2>
+        </div>
+                    <div class="row" id="facewrap">
+                        <div class="col-lg-6 col-sm-6" >
+                            <span id="face-wrapper" >
+                              <img class="img-circle face" src="http://i.huffpost.com/gen/710151/thumbs/s-ERMAHGERD-MEME-large.jpg" width="200"/>
+                            </span>
+                        </div>
+                        <div class="col-lg-6 col-sm-6" >
+                            {{#with vendor}}
+                            <p><a href="{{pathFor 'vendorsShow'}}">{{name}}</a></p>
+                            {{/with}}
+                        </div>
+                    </div>
+<div class="col-sm-12 col-md-12 col-lg-12">
+  <h2><strong>Frequently Asked Questions</strong></h2>
+  <h3><em>What is Pet Portait's role in this?</em></h3>
+      <p>Pet Portrait Club was started by a group of folks who love their pets and wanted decent portraits made of them. It's a way to bring pet lovers and artists together. For this service PPC takes a small commission of each portrait sold.</p>
+  <h3><em>When will I get my portrait?</em></h3>
+      <p>Great portraits can't be rushed. We allow the artists up to one month to finish each portrait and each artist is not allowed to paint more than 3 portraits at one time.</p>
+  <h3><em>Can I communicate with the artist directly?</em></h3>
+      <p>No, we prevent the artist from being overwhelmed with emails/calls/etc. Any notes you want to pass on should be done through Pet Portrait Club.</p>
+</div>
+</div>
+</div>
+
 </template>

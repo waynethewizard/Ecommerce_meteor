@@ -101,3 +101,62 @@
 {
   margin-top: 20px;
 }
+
+/* custom styles */
+
+*, html, body {
+  color: #212121;
+  font-family: foco !important;
+}
+#mainnav {
+  background-color: #193441;
+  border-bottom-width: 2px;
+  border-left-style: solid black;
+  padding-top: 20px;
+
+}
+
+#mainnav a {
+    color: #FDE792;
+}
+
+#mainnav a:hover {
+  background-color: #D1570D;
+  color: #FDE792;
+}
+
+#bg {
+  background-image: url('/images/petportrait.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  width: 100%;
+  color: #FDE792;
+  padding-top: 30px;
+  font-family: foco, arial;
+}
+
+.navbar-toggle {
+  background-color: #9C27B0;
+}
+
+}
+.nav, .main {
+    text-align: center;
+}
+
+* {
+  font-family: foco;
+}
+#facewrap {
+  margin-bottom: 40px;
+  text-align: left;
+}
+#face-wrapper {
+   display: inline-block;
+}
+
+.face {
+   position: relative;
+   border: 10px solid #3E606F;
+}
