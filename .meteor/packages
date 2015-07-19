@@ -23,3 +23,5 @@ npm-container
 dbarrett:dropzonejs
 utilities:avatar
 aldeed:autoform
+insecure
+joshowens:simple-form
