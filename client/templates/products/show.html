@@ -1,4 +1,4 @@
-<template name="productsShow">
+<template name="productShow">
   <div class="container" style="padding-top: 60px">
     <div class="row">
       <div class="col-md-7">
@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-5">
         <h1>{{name}}</h1>
-        {{#with vendor}}
+        {{#with user}}
         <p><a href="{{pathFor 'vendorsShow'}}">{{name}}</a></p>
         {{/with}}
         <p class="lead"><i>{{summary}}</i></p>

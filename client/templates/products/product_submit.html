@@ -1,0 +1,72 @@
+<template name="productSubmit">
+	<form class="main">
+		
+		<div class="form-group">
+			<label class="form-label" for="sku">Sku</label>
+			<div class="form-controls">
+				<input name="sku" type="text" value="" placeholder="Your URL"/>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label class="form-label" for="name">Title</label>
+			<div class="form-controls">
+				<input name="name" type="text" value="" placeholder="Name your post"/>
+			</div>
+		</div>
+
+		<div class="form-group">
+	    	<label for="image">Image</label>
+	    	<input type="file" id="image">
+	    	<p class="help-block">Example block-level help text here.</p>
+		</div>
+
+
+		<div class="form-group">
+			<label class="form-group" for="style">Style</label>
+				<div class="form-controls">
+					<textarea name="style" type="text" value=""></textarea>
+				</div>
+		</div>
+
+		<div class="form-group">
+			<label class="form-group" for="description">Description</label>
+				<div class="form-controls">
+					<textarea name="description" type="text" value=""></textarea>
+				</div>
+		</div>
+
+
+		  <div class="form-group">
+		    <label class="sr-only" for="price">Amount (in dollars)</label>
+		    	<div class="input-group">
+		      		<div class="input-group-addon">$</div>
+		      <input type="text" class="form-control" id="price" placeholder="price">
+		      <div class="input-group-addon">.00</div>
+		    </div>
+		  </div>
+
+
+		<div class="form-group">
+			<label class="form-group" for="inventory">Inventory</label>
+				<div class="form-controls">
+					<textarea name="inventory" type="text" value=""></textarea>
+				</div>
+		</div>
+
+
+		<div class="form-group">
+			<label class="form-group" for="status">Status</label>
+				<div class="form-controls">
+					<textarea name="status" type="text" value=""></textarea>
+				</div>
+		</div>
+
+
+		<div class="form-group">
+			<div class="form-controls">
+				<input type="submit" value="Submit" class="btn btn-primary" />
+			</div>
+		</div>
+	</form>
+</template>
