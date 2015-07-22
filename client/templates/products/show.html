@@ -11,9 +11,7 @@
         <h1>{{description}}</h1>
         <h1>{{inventory}}</h1>
         <h1>{{status}}</h1>
-        {{#with user}}
-        <p><a href="{{pathFor 'vendorsShow'}}">{{name}}</a></p>
-        {{/with}}
+
         <p class="lead"><i>{{summary}}</i></p>
         <p class="lead">{{{markdown description}}}</p>
         <div class="row">
