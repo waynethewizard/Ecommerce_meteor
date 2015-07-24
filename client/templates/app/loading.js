@@ -1,7 +1,7 @@
 Template.loading.rendered = function () {
   if ( ! Session.get('loadingSplash') ) {
     this.loading = window.pleaseWait({
-      logo: '/images/Meteor-logo.png',
+      logo: '/images/pup-icon.svg',
       backgroundColor: '#7f8c8d',
       loadingHtml: message + spinner
     });

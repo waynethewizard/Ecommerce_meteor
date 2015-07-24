@@ -106,10 +106,10 @@
 
 *, html, body {
   color: #212121;
-  font-family: foco !important;
+  font-family: rooney-sans, foco !important;
 }
 #mainnav {
-  background-color: #193441;
+  background-color: #00A388;
   border-bottom-width: 2px;
   border-left-style: solid black;
   padding-top: 20px;
