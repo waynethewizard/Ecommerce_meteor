@@ -1,9 +1,9 @@
 {
-  "stripeSecretKey": "STRIPE SECRET",
+  "stripeSecretKey": "sk_test_hb9mkoeg4j2xKImJoKcndeZC",
   "public": {
-    "stripePublicKey": "STRIPE PUBLIC"
+    "stripePublicKey": "pk_test_VrZ35T9rnA4qhm0e8n9LQFIh"
   },
   "salesDB" : {
-    "connectionString" : "postgresql://user:password@localhost/DBNAME"
+    "connectionString" : "postgresql://wsankey:Julia1020@localhost/rocketship"
   }
 }
