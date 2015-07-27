@@ -109,7 +109,7 @@
   font-family: rooney-sans, foco !important;
 }
 #mainnav {
-  background-color: #00A388;
+  background-color: #79BD8F;
   border-bottom-width: 2px;
   border-left-style: solid black;
   padding-top: 20px;
@@ -117,11 +117,11 @@
 }
 
 #mainnav a {
-    color: #FDE792;
+    color: #FFFF9D;
 }
 
 #mainnav a:hover {
-  background-color: #D1570D;
+  background-color: #00A388;
   color: #FDE792;
 }
 
@@ -129,11 +129,11 @@
   background-image: url('/images/petportrait.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-  min-height: 500px;
+  min-height: 400px;
   width: 100%;
   color: #FDE792;
   padding-top: 30px;
-  font-family: foco, arial;
+  font-family: "rooney-sans", foco, arial;
 }
 
 .navbar-toggle {
