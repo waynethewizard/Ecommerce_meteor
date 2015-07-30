@@ -1,54 +1,100 @@
 <template name="homeIndex">
-<div class="row-fluid" id="bg" style="margin-top: -10px;">
-             <h1 style="padding-top: 20px;">Pet Portrait Club</h1>
-             <h2>Commission an artist to render your best friend.</h2>
-</div>
+       <!--== 5. Header ==-->
+        <section id="header-slider" class="owl-carousel">
+            <div class="item">
+                <div class="container">
+                    <div class="header-content">
+                        <h1 class="header-title">BEST FOOD</h1>
+                        <p class="header-sub-title">create your own slogan</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="header-content">
+                        <h1 class="header-title">BEST SNACKS</h1>
+                        <p class="header-sub-title">create your own slogan</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="header-content text-right pull-right">
+                        <h1 class="header-title">BEST DRINKS</h1>
+                        <p class="header-sub-title">create your own slogan</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+        </section>
 
-<div class="container" >
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top: 0px;">
-          <h2><strong>How it works</strong></h2>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-        <img  src="" style="height:80px;">
-            <h3>Find an artist whose style matches your own</h3>
-            <p>Browse through the artists of Pet Portrait Club who have been personally selected for their skill. Choose the artist whose work inspires you the most. Use the dropdown menus to find the size of the portrait that is right for you.</p>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-        <img  src="" style="height:80px;">
-            <h3>Upload your pet's picture and some notes</h3>
-            <p>During checkout you'll be asked to upload the picture(s) you want the artist to base the portrait on; also be sure to add some notes so that your portrait is as personalized as possible.</p>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-        <img  src="" style="height:80px;">
-            <h3>Find a good place on your wall!</h3>
-            <p>You'll receive a message from us, and the FedEx tracking number, once the portrait is on it's way. Be sure to prepare that perfect spot on your wall. Congratulations!</p>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            <h2><strong>Artist Spotlight</strong></h2>
-        </div>
-                    <div class="row" id="facewrap">
-                        <div class="col-lg-6 col-sm-6" >
-                            <span id="face-wrapper" >
-                              <img class="img-circle face" src="http://i.huffpost.com/gen/710151/thumbs/s-ERMAHGERD-MEME-large.jpg" width="200"/>
-                            </span>
+
+
+        <!--== 6. About us ==-->
+        <section id="about" class="about">
+            <img src="images/icons/about_color.png" class="img-responsive section-icon hidden-sm hidden-xs">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="hidden-xs col-sm-6 section-bg about-bg dis-table-cell">
+
                         </div>
-                        <div class="col-lg-6 col-sm-6" >
-                            {{#with vendor}}
-                            <p><a href="{{pathFor 'vendorsShow'}}">{{name}}</a></p>
-                            {{/with}}
+                        <div class="col-xs-12 col-sm-6 dis-table-cell">
+                            <div class="section-content">
+                                <h2 class="section-content-title">About us</h2>
+                                <p class="section-content-para">
+                                    Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
+                                </p>
+                                <p class="section-content-para">
+                                    beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination.
+                                </p>
+                            </div> <!-- /.section-content -->
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#about -->
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="copyright text-center">
+                            <p>
+                                @copyright 2015 <a href="http://themewagon.com/">ThemeWagon.com</a>
+                            </p>
                         </div>
                     </div>
-<div class="col-sm-12 col-md-12 col-lg-12">
-  <h2><strong>Frequently Asked Questions</strong></h2>
-  <h3><em>What is Pet Portait's role in this?</em></h3>
-      <p>Pet Portrait Club was started by a group of folks who love their pets and wanted decent portraits made of them. It's a way to bring pet lovers and artists together. For this service PPC takes a small commission of each portrait sold.</p>
-  <h3><em>When will I get my portrait?</em></h3>
-      <p>Great portraits can't be rushed. We allow the artists up to one month to finish each portrait and each artist is not allowed to paint more than 3 portraits at one time.</p>
-  <h3><em>Can I communicate with the artist directly?</em></h3>
-      <p>No, we prevent the artist from being overwhelmed with emails/calls/etc. Any notes you want to pass on should be done through Pet Portrait Club.</p>
-</div>
-</div>
-</div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <!--<script type="text/javascript" src="js/jssor.core.js"></script>
+        <script type="text/javascript" src="js/jssor.utils.js"></script>
+        <script type="text/javascript" src="js/jssor.slider.js"></script> -->
+        
+        <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+        <!--  <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+        <script src="js/script.js"></script>
+
+
+        <!--  script for showing icon in placeholder-->
+
+        <script type="text/javascript">
+            $('.iconified').on('keyup', function() {
+                var input = $(this);
+                if(input.val().length === 0) {
+                    input.addClass('empty');
+                } else {
+                    input.removeClass('empty');
+                }
+            });
+        </script>
 
 </template>
