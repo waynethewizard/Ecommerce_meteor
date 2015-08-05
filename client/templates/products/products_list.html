@@ -1,7 +1,13 @@
 <template name="productsList">
 	<div class="products">
-		{{#each products}}
-			{{> productItem}}
-		{{/each}}
+
+			{{#each products}}
+				<h3>{{name}}</h3>
+				<p>{{style}}</p>
+				<ul>
+					<li>{{money price}}</li>
+				</ul>
+			{{/each}}
+
 	</div>
 </template>

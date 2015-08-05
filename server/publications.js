@@ -13,6 +13,10 @@ Meteor.publish("products-by-id", function(_id){
   return Products.find({_id : _id});
 });
 
+Meteor.publish('allProducts', function() {
+  return Products.find();
+});
+
 Meteor.publish("cart", function(key){
   check(key, String);
   return Carts.find({userKey : key});
