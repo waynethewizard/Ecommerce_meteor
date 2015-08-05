@@ -2,11 +2,13 @@
 	<div class="products">
 
 			{{#each products}}
-				<h3>{{name}}</h3>
+				<img src="/images/products/{{image}}" alt="" stlye="height: 100px;"/>
+				<h3>{{medium}}</h3>
 				<p>{{style}}</p>
-				<ul>
-					<li>{{money price}}</li>
-				</ul>
+				<p>{{size}}</p>
+				<p>{{description}}</p>
+				<p>{{price}}</p>
+				<p>{{inventory}}</p>
 			{{/each}}
 
 	</div>
