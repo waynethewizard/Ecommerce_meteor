@@ -1,41 +1,28 @@
 <template name="productSubmit">
-	<form class="main">
-		
+	<form role="form">
+		<h3>Input your product details</h3>
 		<div class="form-group">
-			<label class="form-label" for="sku">Sku</label>
-			<div class="form-controls">
-				<input name="sku" type="text" value="" placeholder="Sku"/>
-			</div>
+			<label class="form-label" for="medium">Medium</label>
+			<select class="form-control">
+				<option>Watercolor</option>
+				<option>Oil</option>
+				<option>Acryllic</option>
+				<option>Abstract</option>
+			</select>
 		</div>
-		
 		<div class="form-group">
-			<label class="form-label" for="name">Name</label>
-			<div class="form-controls">
-				<input name="name" type="text" value="" placeholder="The name"/>
-			</div>
-		</div>
-
-		<div class="form-group">
-	    	<label for="image">Image</label>
-	    	<input type="file" name="image">
-	    	<p class="help-block">Example block-level help text here.</p>
-		</div>
-
-
-		<div class="form-group">
-			<label class="form-group" for="style">Style</label>
-				<div class="form-controls">
-					<textarea name="style" type="text" value=""></textarea>
-				</div>
+			<label class="form-label" for="style">Style</label>
+			<select class="form-control">
+				<option>Classic/Traditional</option>
+				<option>Modern</option>
+				<option>Abstract</option>
+			</select>
 		</div>
 
 		<div class="form-group">
-			<label class="form-group" for="description">Description</label>
-				<div class="form-controls">
-					<textarea name="description" type="text" value=""></textarea>
-				</div>
+			<label class="form-label" for="style">Size</label>
+			<input name="size" type="text" value="" class="form-control" placeholder="12x10"/>
 		</div>
-
 
 		  <div class="form-group">
 		    <label class="sr-only" for="price">Amount (in dollars)</label>
@@ -46,22 +33,28 @@
 		    </div>
 		  </div>
 
-
 		<div class="form-group">
-			<label class="form-group" for="inventory">Inventory</label>
-				<div class="form-controls">
-					<textarea name="inventory" type="text" value=""></textarea>
-				</div>
+			<label for="description">Description</label>
+			<textarea class="form-control" name="description" rows="3"></textarea>
 		</div>
 
-
 		<div class="form-group">
-			<label class="form-group" for="status">Status</label>
-				<div class="form-controls">
-					<textarea name="status" type="text" value=""></textarea>
-				</div>
+	    	<label for="image">Image</label>
+	    	<input type="file" name="image">
+	    	<p class="help-block">Example block-level help text here.</p>
 		</div>
 
+		<div class="form-group">
+			<label class="form-label" for="inventory">Inventory</label>
+			<select class="form-control">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			</select>
+		</div>
 
 		<div class="form-group">
 			<div class="form-controls">

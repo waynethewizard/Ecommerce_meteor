@@ -16,14 +16,13 @@ Template.productSubmit.events({
     e.preventDefault();
 
 		var product = {
-			sku:   $(e.target).find('[name=sku]').val(),
-			name:  $(e.target).find('[name=name]').val(),
+			medium:   $(e.target).find('[name=medium]').val(),
+      style: $(e.target).find('[name=style]').val(),
+      size: $(e.target).find('[name=style]').val(),
+      description: $(e.target).find('[name=description]').val(),
 			image: $(e.target).find('[name=image]').val(),
-			style: $(e.target).find('[name=style]').val(),
-			description: $(e.target).find('[name=description]').val(),
 			price: $(e.target).find('[name=price]').val(),
-			inventory: $(e.target).find('[name=inventory]').val(),
-			status: $(e.target).find('[name=status]').val()
+			inventory: $(e.target).find('[name=inventory]').val()
 		}
 
     var errors = validateproduct(product);
