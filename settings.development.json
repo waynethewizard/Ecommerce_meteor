@@ -5,5 +5,9 @@
   },
   "salesDB" : {
     "connectionString" : "postgresql://wsankey:Julia1020@localhost/rocketship"
-  }
+  },
+  "AWSAccessKeyId" : "AKIAJLMOQNHSSFFY6CEQ",
+  "AWSSecretAccessKey" : "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",
+  "AWSBucket" : "petportraitclub"
+
 }

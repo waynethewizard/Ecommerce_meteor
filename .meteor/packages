@@ -27,3 +27,9 @@ joshowens:simple-form
 cfs:standard-packages
 standard-app-packages
 practicalmeteor:chai
+edgee:slingshot
+lepozepo:s3
+cfs:gridfs
+cfs:filesystem
+cfs:s3
+raix:ui-dropped-event
