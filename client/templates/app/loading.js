@@ -1,7 +1,7 @@
 Template.loading.rendered = function () {
   if ( ! Session.get('loadingSplash') ) {
     this.loading = window.pleaseWait({
-      logo: '/images/pup-icon.svg',
+      logo: '/images/pup-icon.jpg',
       backgroundColor: '#7f8c8d',
       loadingHtml: message + spinner
     });
@@ -15,5 +15,5 @@ Template.loading.destroyed = function () {
   }
 };
 
-var message = '<p class="loading-message">Loading Message</p>';
+var message = '<p class="loading-message">Be right with you!</p>';
 var spinner = '<div class="sk-spinner sk-spinner-rotating-plane"></div>';

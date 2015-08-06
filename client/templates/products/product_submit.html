@@ -1,15 +1,4 @@
 <template name="productSubmit">
-
-  <div class="row">
-    <div class="col-md-12">
-      <div id="dropzone" class="dropzone">
-        <div class="well well-drop-zone">
-          Drop file(s) here to upload
-        </div>
-      </div>
-    </div>
-  </div>
-
 	<form role="form">
 		<h3>Input your product details</h3>
 		<div class="form-group">
@@ -66,6 +55,15 @@
 				<input type="submit" value="Submit" class="btn btn-primary" />
 			</div>
 		</div>
+
+    <input type="file" class="file_bag">
+    <button class="upload">Upload</button>
+
+    {{#each files}}
+        <p>{{percent_uploaded}}</p>
+    {{/each}}
+
+		
 	</form>
 <h2>Your image:</h2>
   <img src={{url}}/>

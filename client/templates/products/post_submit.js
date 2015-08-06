@@ -45,12 +45,20 @@ Template.productSubmit.events({
 
 
 Template.productSubmit.events({
-  'change .myFileInput': function(event, template) {
-    var files = event.target.files;
-    for (var i = 0, ln = files.length; i < ln; i++) {
-      Images.insert(files[i], function (err, fileObj) {
-        // Inserted new doc with ID fileObj._id, and kicked off the data upload using HTTP
-      });
+    "click button.upload": function(){
+        var files = $("input.file_bag")[0].files
+
+        S3.upload({
+                files:files,
+                path:"subfolder"
+            },function(e,r){
+                console.log(r);
+        });
     }
-  }
-});
+})
+
+Template.productSubmit.helpers({
+    "files": function(){
+        return S3.collection.find();
+    }
+})

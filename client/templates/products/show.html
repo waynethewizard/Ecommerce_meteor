@@ -5,16 +5,13 @@
         <img src="/images/products/{{image}}" alt=""/>
       </div>
       <div class="col-md-5">
-        <h1>{{sku}}</h1>
-        <h1>{{name}}</h1>
-        <h1>{{style}}</h1>
-        <h1>{{description}}</h1>
-        <h1>{{inventory}}</h1>
-        <h1>{{status}}</h1>
-        <h1>{{userId}}</h1>
-
-        <p class="lead"><i>{{summary}}</i></p>
-        <p class="lead">{{{markdown description}}}</p>
+        <h3>{{description}}</h3>
+        <ul>
+          <li>{{medium}}</li>
+          <li>{{style}}</li>
+          <li>{{size}}</li>
+          <li>Number in stock: {{inventory}}</li>
+        </ul>
         <div class="row">
           <div class="col-md-12">
             <h3>{{money price}}</h3>
@@ -26,7 +23,6 @@
               </a>
             </p>
           </div>
-
         </div>
       </div>
     </div>
