@@ -2,8 +2,8 @@
 	<form role="form">
 		<h3>Input your product details</h3>
 		<div class="form-group">
-			<label class="form-label" for="medium">Medium</label>
-			<select class="form-control">
+			<label class="form-label">Medium</label>
+			<select class="form-control" name="medium">
 				<option>Watercolor</option>
 				<option>Oil</option>
 				<option>Acryllic</option>
@@ -11,8 +11,8 @@
 			</select>
 		</div>
 		<div class="form-group">
-			<label class="form-label" for="style">Style</label>
-			<select class="form-control">
+			<label class="form-label">Style</label>
+			<select class="form-control" name="style">
 				<option>Classic/Traditional</option>
 				<option>Modern</option>
 				<option>Abstract</option>
@@ -20,15 +20,15 @@
 		</div>
 
 		<div class="form-group">
-			<label class="form-label" for="style">Size</label>
-			<input name="size" type="text" value="" class="form-control" placeholder="12x10"/>
+			<label class="form-label">Size</label>
+			<input name="size" type="text" value="" class="form-control" placeholder="Please input length x width (example: 12x10)"/>
 		</div>
 
 		  <div class="form-group">
 		    <label class="sr-only" for="price">Amount (in dollars)</label>
 		    	<div class="input-group">
 		      		<div class="input-group-addon">$</div>
-		      <input type="text" class="form-control" name="price" placeholder="price">
+		      <input type="text" class="form-control" name="price" placeholder="Please input your price, adding materials and a $12.00 shipping fee">
 		      <div class="input-group-addon">.00</div>
 		    </div>
 		  </div>
@@ -40,7 +40,7 @@
 
 		<div class="form-group">
 			<label class="form-label" for="inventory">Inventory</label>
-			<select class="form-control">
+			<select name="inventory" class="form-control">
 				<option>1</option>
 				<option>2</option>
 				<option>3</option>
@@ -55,17 +55,8 @@
 				<input type="submit" value="Submit" class="btn btn-primary" />
 			</div>
 		</div>
+		  <input type="hidden" name="image" role="uploadcare-uploader" data-crop />
+		  </form>
 
-    <input type="file" class="file_bag">
-    <button class="upload">Upload</button>
-
-    {{#each files}}
-        <p>{{percent_uploaded}}</p>
-    {{/each}}
-
-		
-	</form>
-<h2>Your image:</h2>
-  <img src={{url}}/>
 </template>
 

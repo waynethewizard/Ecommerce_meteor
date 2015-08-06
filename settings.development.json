@@ -6,8 +6,10 @@
   "salesDB" : {
     "connectionString" : "postgresql://wsankey:Julia1020@localhost/rocketship"
   },
-    "key": "AKIAJLMOQNHSSFFY6CEQ",
-    "secret": "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",
-    "bucket": "petportraitclub"
+    "AWSAccessKeyId": "AKIAJLMOQNHSSFFY6CEQ",
+    "AWSSecretAccessKey": "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",
+    "bucket": "petportraitclub",
+    "AWSRegion": "us-east-1",
+    "UPLOADCARE_PUBLIC_KEY": "aed718d673d5de4cb3e9"
 
 }

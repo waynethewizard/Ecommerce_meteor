@@ -18,17 +18,18 @@ Template.productSubmit.events({
 		var product = {
 			medium:   $(e.target).find('[name=medium]').val(),
       style: $(e.target).find('[name=style]').val(),
-      size: $(e.target).find('[name=style]').val(),
+      size: $(e.target).find('[name=size]').val(),
       description: $(e.target).find('[name=description]').val(),
 			image: $(e.target).find('[name=image]').val(),
 			price: $(e.target).find('[name=price]').val(),
 			inventory: $(e.target).find('[name=inventory]').val()
 		}
-
     var errors = validateproduct(product);
     if (errors.title || errors.url)
       return Session.set('productSubmitErrors', errors);
     
+    var imageUrl = Session.get('imageUrl');
+
     Meteor.call('productInsert', product, function(error, result) {
       // display the error to the user and abort
       if (error)
@@ -38,27 +39,20 @@ Template.productSubmit.events({
       if (result.productExists)
         throwError('This link has already been producted');
       
+      Session.set('imageUrl', null);
+
       Router.go('productShow', {_id: result._id});  
     });
   }
 });
 
+Template.productSubmit.rendered = function() {
+  var widget = uploadcare.Widget('[role=uploadcare-uploader]');
 
-Template.productSubmit.events({
-    "click button.upload": function(){
-        var files = $("input.file_bag")[0].files
-
-        S3.upload({
-                files:files,
-                path:"subfolder"
-            },function(e,r){
-                console.log(r);
-        });
-    }
-})
-
-Template.productSubmit.helpers({
-    "files": function(){
-        return S3.collection.find();
-    }
-})
+  widget.onUploadComplete(function(fileInfo) {
+    Session.set('imageUrl', fileInfo.originalUrl);
+    console.log(fileInfo.uuid);
+    console.log(fileInfo.originalUrl);
+    console.log('imageURL');
+  });
+}
