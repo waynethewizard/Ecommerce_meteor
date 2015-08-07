@@ -48,7 +48,8 @@ CheckoutViewModel = function(args){
 
     var handler = StripeCheckout.configure({
       //should be set in settings
-      key: Meteor.settings.public.stripePublicKey,
+      src:"https://checkout.stripe.com/checkout.js",
+      key: "pk_test_L2L7k3z8D2ybRYEjMqzBkVdZ",
       image: '/images/logo-small.png',
       zipCode : true,
       email : self.email(),

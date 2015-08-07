@@ -13,15 +13,14 @@
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class=""><a href="{{pathFor 'homeIndex'}}">Home</a></li>
-        <li><a href="{{pathFor 'homeContact'}}">Contact</a></li>
+        <li><a href="{{pathFor 'homeAbout'}}">About</a></li>
         <li><a href="{{pathFor 'productsList'}}">Portraits</a></li>
       </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li>
             {{#if currentUser }}
-              <a href="{{pathFor 'profileShow'}}">Profile</a> 
+            <li><a href="{{pathFor 'profileShow'}}">Profile</a></li>
+            <li><a href="{{pathFor 'cartShow'}}">Cart</a></li>
             {{/if}}
-          </li>
             {{> loginButtons}} <!-- here -->
         </ul>
     </div><!--/.nav-collapse -->
