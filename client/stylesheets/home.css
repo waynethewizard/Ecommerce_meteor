@@ -1,9 +1,6 @@
 /* custom styles */
 
-*, html, body {
-  color: #212121;
-  font-family: rooney-sans, foco !important;
-}
+
 #mainnav {
   background-color: #79BD8F;
   border-bottom-width: 2px;
@@ -56,3 +53,4 @@
    position: relative;
    border: 10px solid #3E606F;
 }
+

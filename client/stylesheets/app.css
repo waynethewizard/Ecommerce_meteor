@@ -1,5 +1,6 @@
-body {
-  padding-top: 50px;
+*, html, body {
+  color: #212121;
+  font-family: rooney-sans, foco !important;
 }
 .error-template {padding: 40px 15px;text-align: center;}
 .error-actions {margin-top:15px;margin-bottom:15px;}
@@ -14,4 +15,25 @@ body {
 
 .sk-spinner-rotating-plane.sk-spinner {
   background-color: #fff;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  padding-top: 50px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #FFFF9D;
+  text-align: center; 
+  color: #00A388 !important;
 }
