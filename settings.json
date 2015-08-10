@@ -1,9 +1,15 @@
 {
-  "stripeSecretKey": "STRIPE SECRET",
+  "stripeSecretKey": "sk_test_1Yws1MKoBpkUafu9t5L6hc6k",
   "public": {
-    "stripePublicKey": "STRIPE PUBLIC"
+    "stripePublicKey": "pk_test_L2L7k3z8D2ybRYEjMqzBkVdZ"
   },
   "salesDB" : {
-    "connectionString" : "postgresql://user:password@localhost/DBNAME"
-  }
+    "connectionString" : "postgresql://wsankey:Julia1020@localhost/rocketship"
+  },
+    "private": {
+        "MailChimp": {
+            "apiKey": "67d17e33230397e9fb272b4dbc0d7c90-us10",
+            "listId": "c9dc7f6573"
+        }
+    }
 }

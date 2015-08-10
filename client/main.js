@@ -25,4 +25,3 @@ UI.registerHelper("markdown", function(text){
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 
-  var apiKey = "67d17e33230397e9fb272b4dbc0d7c90-us10";
