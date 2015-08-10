@@ -2,7 +2,7 @@
 
 
 #mainnav {
-  background-color: #79BD8F;
+  background-color: #477725;
   border-bottom-width: 2px;
   border-left-style: solid black;
   padding-top: 20px;
@@ -10,11 +10,11 @@
 }
 
 #mainnav a {
-    color: #FFFF9D;
+    color: #FDE792;
 }
 
 #mainnav a:hover {
-  background-color: #00A388;
+  background-color: #D1570D;
   color: #FDE792;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .navbar-toggle {
-  background-color: #9C27B0;
+  background-color: #D1570D;
 }
 
 }
