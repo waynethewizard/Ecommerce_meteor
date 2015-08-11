@@ -1,8 +1,14 @@
 /* custom styles */
+.login-other-options {
+  color: black;
+}
 
+.login-other-options a {
+  color: black;
+}
 
 #mainnav {
-  background-color: #477725;
+  background-color: #009688;
   border-bottom-width: 2px;
   border-left-style: solid black;
   padding-top: 20px;
@@ -10,12 +16,12 @@
 }
 
 #mainnav a {
-    color: #FDE792;
+    color: #FFFFFF;
 }
 
 #mainnav a:hover {
-  background-color: #D1570D;
-  color: #FDE792;
+  background-color: #00796B; 
+  color: #FFFFFF;
 }
 
 #bg {
@@ -24,13 +30,13 @@
   background-repeat: no-repeat;
   min-height: 400px;
   width: 100%;
-  color: #FDE792;
+  color: #FFEB3B;
   padding-top: 30px;
   font-family: "rooney-sans", foco, arial;
 }
 
 .navbar-toggle {
-  background-color: #D1570D;
+  background-color: #00796B;
 }
 
 }
