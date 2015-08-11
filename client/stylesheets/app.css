@@ -27,6 +27,7 @@ body {
   margin-bottom: 60px;
   padding-top: 50px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -36,4 +37,51 @@ body {
   background-color: #00796B;
   text-align: center; 
   color: #009688 !important;
+}
+
+
+a#forgot-password-link {
+  color: black !important;
+}
+a#signup-link {
+  color: black !important;
+}
+
+li.lishow {
+  list-style: none;
+  background: #727272;
+  color: #FFFFFF;
+  height: 2em;
+  line-height: 2em;
+  margin: 2px 0;
+  padding: 0 0.5em;
+  overflow: hidden;
+  width: 3em;
+  display: inline;
+}
+
+li.lishowsize {
+  list-style: none;
+  background: #212121;
+  color: #FFFFFF;
+  height: 2em;
+  line-height: 2em;
+  margin: 2px 0;
+  padding: 0 0.5em;
+  overflow: hidden;
+  width: 3em;
+  display: inline;
+}
+
+li.lishowprice {
+  list-style: none;
+  background: #00796B;
+  color: #FFFFFF;
+  height: 2em;
+  line-height: 2em;
+  margin: 2px 0;
+  padding: 0 0.5em;
+  overflow: hidden;
+  width: 3em;
+  display: inline;
 }

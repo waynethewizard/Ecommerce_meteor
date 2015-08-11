@@ -1,11 +1,4 @@
 /* custom styles */
-.login-other-options {
-  color: black;
-}
-
-.login-other-options a {
-  color: black;
-}
 
 #mainnav {
   background-color: #009688;
@@ -39,7 +32,7 @@
   background-color: #00796B;
 }
 
-}
+}s
 .nav, .main {
     text-align: center;
 }
@@ -59,4 +52,5 @@
    position: relative;
    border: 10px solid #3E606F;
 }
+
 

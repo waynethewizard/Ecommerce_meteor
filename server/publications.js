@@ -5,7 +5,7 @@ Meteor.publish("vendors", function(){
 
 Meteor.publish("products-by-vendor", function(slug){
   check(slug, String);
-  return Products.find({"vendor.slug" : slug})
+  return Products.find({"userId" : slug})
 });
 
 Meteor.publish("products-by-id", function(_id){
