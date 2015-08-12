@@ -1,18 +1,25 @@
 <template name="productsList">
 	<div class="products">
 		{{#each products}}
-         <h3><a href="/artist/{{userId}}" id="more-details">{{author}}</a></h3>	
-         <ul>
-			<li class="lishow">{{medium}}</li>
-			<li class="lishow">{{style}}</li>
-			<li class="lishowsize">{{size}}</li>
-			<li class="lishowprice">{{money price}}</li>
-		</ul>
-              <a href="#" class="btn btn-success" id="add-to-cart">
-                <i class="glyphicon glyphicon-shopping-cart"></i>
-                Add To Cart
-              </a>
-		{{/each}}
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12" style="border-top: dashed; border-color: #B6B6B6; margin-bottom: 1em; padding: 5px 0px 5px 0px;" >
+		         <h3><a href="/artist/{{userId}}" id="more-details">{{author}}</a></h3>	
+		         <ul>
+					<li class="lishow">{{medium}}</li>
+					<li class="lishow">{{style}}</li>
+					<li class="lishowsize">{{size}}</li>
+					<li class="lishowprice">{{money price}}</li>
+				</ul>
+		              <a href="#" class="btn btn-success" id="add-to-cart" style="background-color: #009688;">
+		                <i class="glyphicon glyphicon-shopping-cart"></i>
+		                Add To Cart
+		              </a>
+		   </div>
+		</div>
+	</div>
+
+				{{/each}}
 
 	</div>
 </template>
