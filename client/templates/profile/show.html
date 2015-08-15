@@ -2,27 +2,29 @@
   <div class="container" style="padding-top:80px">
     <div class="row">
       <div class="col-md-5">
+        <h1>Your Profile</h1>
         {{#with currentUser}}
         <img src="{{profile.picture}}-/resize/100x100/"  class="img-circle" width="100" height="100" alt=""/>
-        <h1>
-        {{profile.name}}
-       	</h1>
+        <h2>
+        Name: {{profile.name}}
+       	</h2>
        	 <p>
-        {{email}}
+        Email address: {{email}}
        	</p>
        	  <p>
-          {{username}}
+          Username: {{username}}
        	</p>
           <p>
-        {{profile.description}}
+        A little about yourself: {{profile.description}}
         </p>
        	{{/with}}
       </div>
     </div>
-  <h2>Your Profile</h2>
-<form method="POST" role="form">
-    <legend>Change your profile</legend>
-    <input type="hidden" name="picture" role="uploadcare-uploader" data-crop />
+
+<form style="margin-bottom: 5em;" method="POST" role="form">
+    <h2>Update your profile here</h2>
+    <h3>Upload a profile pic!</h3>
+    <input type="hidden" name="picture" role="uploadcare-uploader" data-crop/>
 
     <div class="form-group">
         {{text_field 'name'}}
@@ -31,14 +33,13 @@
     <div class="form-group">
         {{text_area 'description'}}
     </div>
-
+    <h3>Show off some of your work</h3>
     <div class="form-group">
       <input type="hidden" name="image" role="uploadcare-uploader" data-crop />
     </div>
-    {{submit_button 'Add'}}
+    {{submit_button 'Update your profile'}}
 </form>
+        <h3 style="margin-bottom: 5em;"><a href="{{pathFor 'productSubmit'}}">Add some portraits!</a></h3>
    </div>
-    <ul>
-        <li><a href="{{pathFor 'productSubmit'}}">Add some products!</a></li>
-    </ul>
+
 </template>

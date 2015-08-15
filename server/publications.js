@@ -4,8 +4,11 @@ Meteor.publish("vendors", function(){
 });
 
 Meteor.publish("products-by-vendor", function(slug){
-  check(slug, String);
-  return Products.find({"userId" : slug})
+  return Products.find({_id : slug})
+});
+
+Meteor.publish("artist-data", function() {
+	return Meteor.users.find({_id: this.userId})
 });
 
 Meteor.publish("products-by-id", function(_id){
