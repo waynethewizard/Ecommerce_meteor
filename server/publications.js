@@ -3,16 +3,15 @@ Meteor.publish("vendors", function(){
   return Vendors.find();
 });
 
-Meteor.publish("products-by-vendor", function(slug){
-  return Products.find({_id : slug})
-});
-
 Meteor.publish("artist-data", function() {
-	return Meteor.users.find({_id: this.userId})
+	return Meteor.users.find(), {
+		fields: {
+			'profile.name' : 1
+		}};
 });
 
-Meteor.publish("products-by-id", function(_id){
-  check(_id, Match.OneOf(String, undefined));
+Meteor.publish("products-by-id", function(userId){
+  check(userId, Match.OneOf(String, undefined));
   return Products.find({_id : _id});
 });
 

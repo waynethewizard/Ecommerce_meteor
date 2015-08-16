@@ -1,7 +1,5 @@
 Template.vendorsShow.helpers({
-  portraits: function () {
-    selector = {userId: Meteor.userId()};
-    options = {sort: {createdAt: -1}};
-    return Products.find(selector, options);
+  products : function(){
+    return Products.find({_id : this._id});
   }
 });
