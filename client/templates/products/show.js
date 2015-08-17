@@ -15,7 +15,7 @@ Template.productsList.helpers({
   products: function() {
     return Products.find({});
   }
-})
+});
 
 Template.productsList.events({
   "click #add-to-cart" : function(ev){
