@@ -2,6 +2,10 @@ Meteor.publish("artist-data", function(){
 	return Meteor.users.find();
 });
 
+Meteor.publish('allProducts', function() {
+  return Products.find();
+});
+
 Meteor.publish("userProfile",function(username){
     // simulate network latency by sleeping 2s
     Meteor._sleepForMs(2000);
@@ -36,13 +40,10 @@ Meteor.publish("userProfile",function(username){
     }
 });
 
-Meteor.publish("products-by-id", function(user){
-    return Products.find({username : user});
+Meteor.publish("products-by-id", function(_id){
+    return Products.find({userId: _id});
 });
 
-Meteor.publish('allProducts', function() {
-  return Products.find();
-});
 
 Meteor.publish("cart", function(key){
   check(key, String);
