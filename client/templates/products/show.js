@@ -29,3 +29,12 @@ Template.productsList.events({
     });
   }
 });
+
+Template.productsList.events({
+  'click #artist': function(){
+    var playerId = this.username;
+    Session.set('selectedPlayer', playerId);
+    var selectedPlayer = Session.get('selectedPlayer');
+    console.log(selectedPlayer);
+}
+});

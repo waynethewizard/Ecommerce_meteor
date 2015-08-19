@@ -1,18 +1,12 @@
 <template name="profile">
 <div style="margin-top 5em;">
 
-    <h1 >Profile.Name: {{profile.name}}</h1><br>
-    <h1>Username: {{username}}</h1>
-    <h1>Profile.Description: {{profile.description}}</h1>
-
-    {{! with acts as an if : the following part won't be displayed
-        if the user document has no profile property}}
-
+	    <h1>Profile.Name: {{user.profile.name}}</h1><br>
+	    <h1>Username: {{username}}</h1>
+	    <h1>Profile.Description: {{profile.description}}</h1>
     {{#each products}}
-
         <h1>Products! {{username}}</h1>
         <h1>price {{price}}</h1>
-
     {{/each}}
 </div>
 </template>

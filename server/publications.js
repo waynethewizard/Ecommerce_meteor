@@ -2,8 +2,8 @@ Meteor.publish("artist-data", function(){
 	return Meteor.users.find();
 });
 
-Meteor.publish('allProducts', function() {
-  return Products.find();
+Meteor.publish('allProducts', function(username) {
+  return Products.find({username:username});
 });
 
 Meteor.publish("userProfile",function(username){
@@ -40,8 +40,8 @@ Meteor.publish("userProfile",function(username){
     }
 });
 
-Meteor.publish("products-by-id", function(_id){
-    return Products.find({userId: _id});
+Meteor.publish("products-by-id", function(){
+    return Products.find();
 });
 
 
