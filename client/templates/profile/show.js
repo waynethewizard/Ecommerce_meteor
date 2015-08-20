@@ -1,6 +1,6 @@
 Meteor.subscribe("artist-data");
 Meteor.subscribe("userProfile");
-Meteor.subscribe("allProducts");
+Meteor.subscribe("products-by-id");
 
 Template.profile.helpers({
   products : function(){
