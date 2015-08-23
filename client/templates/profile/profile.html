@@ -1,13 +1,22 @@
 <template name="profile">
 <div style="margin-top 5em;">
-
-	    <h1>Profile.Name: {{user.profile.name}}</h1><br>
-	    <h1>Username: {{username}}</h1>
-	    <h1>Profile.Description: {{profile.description}}</h1>
-	    {{_id}}
-    {{#each products}}
+	<div>
+	   	{{> profile2}}
+	</div>
+	{{#each products}}
         <h1>Products! {{username}}</h1>
         <h1>price {{price}}</h1>
     {{/each}}
 </div>
+</template>
+
+<template name="profile2">
+
+	{{#each users}}
+	<p>hellO</p>
+		{{_id}}
+		{{username}}
+		{{profile.username}}
+		{{profile.description}}
+	{{/each}}
 </template>

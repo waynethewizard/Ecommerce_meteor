@@ -1,15 +1,14 @@
+
 Meteor.subscribe("artist-data");
-Meteor.subscribe("userProfile");
-Meteor.subscribe("products-by-id");
 
 Template.profile.helpers({
-  products : function(){
-    return Products.find();
+  products: function() {
+    return Products.find({username : Router.current().params.username});
   }
 });
 
-Template.profile.helpers({
-  artist : function(){
-    return Meteor.users.find();
+Template.profile2.helpers({
+  users : function() {
+    return Meteor.users.find({username: Router.current().params.username});
   }
 });
