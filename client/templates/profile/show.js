@@ -12,3 +12,12 @@ Template.profile2.helpers({
     return Meteor.users.find({username: Router.current().params.username});
   }
 });
+
+Template.profileShow.events({
+  'submit form': function(event) {
+        event.preventDefault();
+        var data = SimpleForm.processForm(event.target);
+	Meteor.users.update(Meteor.userId(), {$set: {profile: data}});
+	Meteor.products.update(Meteor.userId(), {$set: {products: data}});
+  }
+});
