@@ -1,22 +1,37 @@
 <template name="profile">
 <div style="margin-top 5em;">
-	<div>
-	   	{{> profile2}}
-	</div>
-	{{#each products}}
-        <h1>Products! {{username}}</h1>
-        <h1>price {{price}}</h1>
-    {{/each}}
+	{{> profile2}}
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			{{#each products}}
+		        <h3>Price (includes shipping): {{money price}}</h3>
+		        <ul>
+					<li class="lishow">{{medium}}</li>
+					<li class="lishow">{{style}}</li>
+					<li class="lishowsize">{{size}}</li>
+					<li class="lishowprice">{{money price}}</li>
+				</ul>
+		    {{/each}}
+    	</div>
+    </div>
 </div>
 </template>
 
 <template name="profile2">
-
+<div class="container">
+	<div class="row">
 	{{#each users}}
-	<p>hellO</p>
-		{{_id}}
-		{{username}}
-		{{profile.username}}
-		{{profile.description}}
+		<div class="col-xs-4 pull-left">
+			{{profile.picture}}
+		</div>
+		<div class="col-xs-8 pull-right">
+			<h2>{{profile.name}}</h2>
+			<p>{{profile.description}}</p>
+			<p>{{profile.picture}}</p>
+		</div>
 	{{/each}}
+	</div>
+</div>
 </template>

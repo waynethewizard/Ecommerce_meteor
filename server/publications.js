@@ -21,7 +21,9 @@ Meteor.publish("artist-data", function(){
 	return Meteor.users.find({}, {
 		fields : {
 			'username' : 1,
-			'profile.description' : 1
+			'profile.description' : 1,
+			'profile.name' : 1,
+			'profile.picture' : 1
 		}
 	});
 });
