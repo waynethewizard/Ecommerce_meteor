@@ -18,6 +18,6 @@ Template.profileShow.events({
         event.preventDefault();
         var data = SimpleForm.processForm(event.target);
 	Meteor.users.update(Meteor.userId(), {$set: {profile: data}});
-	Meteor.products.update(Meteor.userId(), {$set: {products: data}});
+	Products.update(Products.find({userId: Meteor.userId()}), {$set: {name: data.name}});
   }
 });

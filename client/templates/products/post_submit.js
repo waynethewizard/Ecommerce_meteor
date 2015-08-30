@@ -41,7 +41,7 @@ Template.productSubmit.events({
       
       Session.set('imageUrl', null);
 
-      Router.go('productShow', {_id: result._id});  
+      Router.go('productsList', {_id: result._id});  
     });
   }
 });
