@@ -7,6 +7,7 @@ Meteor.startup(function(){
     });
 
     db = connected.result;
+    
     console.log("The DB is : ", db);
     this.saveCheckout = function(checkout){
       var saved = Async.runSync(function(done){

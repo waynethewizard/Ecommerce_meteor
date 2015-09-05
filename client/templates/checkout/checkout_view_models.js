@@ -48,8 +48,7 @@ CheckoutViewModel = function(args){
 
     var handler = StripeCheckout.configure({
       //should be set in settings
-      src:"https://checkout.stripe.com/checkout.js",
-      key: "pk_test_L2L7k3z8D2ybRYEjMqzBkVdZ",
+      key: Meteor.settings.public.stripePublicKey,
       image: '/images/logo-small.png',
       zipCode : true,
       email : self.email(),
@@ -102,7 +101,7 @@ CheckoutViewModel = function(args){
     //call to processCharge
     processPayment(checkout,function(err,res){
       if(res.success){
-        //console.log(res);
+        console.log(res);
         Router.go("receiptShow", {id: res.receipt_id});
       }else{
         sAlert.error(res.message);
