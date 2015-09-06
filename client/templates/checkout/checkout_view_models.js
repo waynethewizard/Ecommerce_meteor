@@ -49,7 +49,7 @@ CheckoutViewModel = function(args){
     var handler = StripeCheckout.configure({
       //should be set in settings
       key: Meteor.settings.public.stripePublicKey,
-      image: '/images/logo-small.png',
+      image: '/images/pup-icon.jpg',
       zipCode : true,
       email : self.email(),
       allowRememberMe : true,
@@ -59,9 +59,9 @@ CheckoutViewModel = function(args){
 
 
     handler.open({
-      name: 'The Rocket Shop',
+      name: 'Pet Portrait Club!',
       description: checkoutModel.description(),
-      amount: currentCart.total
+      amount: currentCart.total * 100
     });
   };
 
@@ -105,6 +105,7 @@ CheckoutViewModel = function(args){
         Router.go("receiptShow", {id: res.receipt_id});
       }else{
         sAlert.error(res.message);
+        console.log(res.message);
       }
     });
   };

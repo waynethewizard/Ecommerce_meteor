@@ -6,7 +6,7 @@ Meteor.startup(function(){
       //process the charge...
       var stripeCall = Async.runSync(function(done){
         var charge = {
-          amount: checkout.total,
+          amount: checkout.total * 100,
           currency: "usd",
           source: checkout.token.id,
           description: checkout.description
